@@ -1,0 +1,54 @@
+/* Base layout */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #1f2937;
+}
+
+#three-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 3rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
